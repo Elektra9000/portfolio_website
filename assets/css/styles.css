@@ -1,0 +1,598 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("efe-kurnaz-RnCPiXixooY-unsplash\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 260vh;
+  margin-bottom: 15px;
+  clear: both;
+}
+
+/* Nav-Bar */
+header {
+  position: fixed;
+  left: 0;     
+  top: 0;     
+  width: 100%;
+  z-index: 100;
+
+  background-image: linear-gradient(to right, rgba(68, 193, 163, 0.5), rgba(215, 29, 150, 0.5));
+
+  font-size: 18px;
+} 
+
+.nav-item {
+  overflow-y: hidden;
+  line-height: 15px;
+}
+
+.nav-link, .navbar-brand {
+  color: aliceblue;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  color: rgb(57, 37, 108);
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.navbar-toggler {
+  color:#fff; 
+}
+
+.button:hover {
+  background-color: rgb(57, 37, 108);
+  transition: 0.7s;
+}
+
+.navbar-brand:hover {
+  color: rgb(215, 29, 150);
+  transition: 0.7s;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: rgb(57, 37, 108);
+  transition: 0.7s;
+  font-weight: bold;
+}
+  
+.nav-link:active, .navbar-brand:active {
+  color: aliceblue;
+  transition: 0.7s;
+}
+/* Nav-Bar */
+
+/* Cards */
+.card-1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  background-color: rgba(57, 37, 108, 0.3);
+  border-radius: 15px;
+  border: none;
+  padding: 30px;
+  margin-bottom: 50px; 
+  margin-top: 300px;
+}
+
+.card-img-top {
+  width: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 12px;
+  border: solid 5px rgba(254, 154, 104, 0.4);
+  box-shadow: 5px 5px rgba(215, 29, 150, 0.6);
+}
+
+.container {
+  width: 70%;
+}
+
+.about-me {
+  color: aliceblue;
+  font-size: 22px;
+  text-align: justify;
+  margin: 15px;
+}
+
+.box {
+  display: grid;
+  align-items: center;
+}
+
+.card-2 {
+  background-color: rgba(57, 37, 108, 0.3);
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+}
+
+.card-title {
+  color: aliceblue;
+  font-size: 22px;
+  font-weight: bold;
+}
+  
+.language {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+  
+.html, .css, .java-script, .bootstrap {
+  color: rgb(74, 205, 165);
+  font-weight: bold;
+}
+
+.progress {
+  border: 3px solid rgba(57, 37, 108, 0.6);
+  height: 25px;
+  border-radius: 15px;
+}
+/* Cards */
+
+/* Form */
+.form {
+  background-color: rgba(57, 37, 108, 0.3);
+  border-radius: 15px;
+  border: none;
+  padding: 60px 80px 80px 80px;
+  margin-bottom: 15px; 
+  margin-top: 50px;
+}
+
+legend {
+  text-align: center;
+  color: aliceblue;
+}
+
+.contact-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  font-weight: bold;
+}
+
+label {
+  color: rgb(74, 205, 165);
+}
+
+.contact {
+  display: grid;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#email, #message {
+  border: none;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+
+#email {
+  width: 100%;
+}
+
+.submit-button {
+  margin-top: 15px;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  font-weight: bold; 
+}
+
+.submit-button:hover {
+  margin-top: 15px;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  color: aliceblue;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgba(74, 205, 165, 0.8), rgba(57, 37, 108, 0.8));
+}
+/* Form */
+
+/* Footer */
+footer {
+  font-size: 50px;
+}
+
+.container-fluid-2 {
+  background-image: linear-gradient(to right, rgba(57, 37, 108, 0.5), rgba(215, 29, 150, 0.5));
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%;
+  
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.btn {
+  width: 100px;
+  border: 3px solid aliceblue;
+  color: aliceblue;
+}
+
+.fb:hover {
+  background-color: #3b5998;
+  color: white;
+  transition: 1s;
+} 
+
+.go:hover {
+  background-color: #ea4335;
+  color: white;
+  transition: 1s;
+}
+
+.lin:hover {
+  background-color: #0e76a8;
+  color: white;
+  transition: 1s;
+}
+
+.ins:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
+.git:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to right, rgba(57, 37, 108, 0.3), rgba(215, 29, 150, 0.3));
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgba(215, 29, 150, 0.6), rgba(74, 205, 165, 0.6));
+  border-radius: 5vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, rgba(215, 29, 150, 0.8), rgba(74, 205, 165, 0.8));
+}
+/* Footer */
+
+/* Media Queries */
+@media screen and (min-width: 2000px) {
+  .contact-container {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1675px) {
+  .navbar-brand, .nav-link {
+    font-size: 40px;
+  }
+
+  .box {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .card-1 {
+    height: 800px;
+    margin-bottom: 100px;
+  }
+
+  .about-me {
+    font-size: 40px;
+  }
+
+  .card-img-top {
+    width: 550px;
+  }
+
+  .card-2 {
+   width: 100%;
+   margin-bottom: 100px;
+  }
+
+  .card-title, .language {
+    font-size: 40px;
+  }
+  
+  .progress {
+    height: 40px;
+    font-size: 25px;
+  }
+
+  .portfolio {
+    font-size: 40px;
+  }
+
+  .carousel {
+    height: 600px;
+    margin-bottom: 200px;
+  }
+
+  .carousel-item {
+    height: 650px;
+  }
+
+  .form-title, 
+  .email,
+  .message {
+    font-size: 40px;
+  }
+
+  #email {
+    height: 50px;
+  }
+
+  #message {
+    height: 250px;
+  }
+
+  .submit-button {
+    width: 150px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .container-fluid-2 {
+    height: 100px;
+  }
+
+  .btn {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .card-1 {
+    margin-top: 180px;
+  }
+
+  .about-me {
+    font-size: 18px;
+  }
+
+  .card-img-top {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .card-1 {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .about-me {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .card-img-top {
+    width: 55%;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-2 {
+    width: 100%;
+  }
+
+  .portfolio,
+  .card-title,
+  .form-title,
+  .language,
+  .message,
+  .email {
+    font-size: 16px;
+  }
+
+  .carousel {
+    margin-bottom: -18px;
+  }
+
+  .carousel-item {
+    margin-bottom: 45px;
+  }
+
+  #message {
+    height: 100px;
+  }
+
+  .contact-container {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 425px) {
+  .card-1 {
+    margin-top: 180px;
+    margin-bottom: 15px;
+  }
+
+  .about-me {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .card-img-top {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .portfolio,
+  .card-title,
+  .form-title,
+  .language,
+  .message,
+  .email {
+    font-size: 14px;
+  }
+
+  .carousel-inner {
+    height: 250px;
+  }
+
+  .form {
+    margin-top: 10px;
+  }
+
+  #email, #message {
+    width: 100%;
+  }
+
+  #message {
+    height: 70%;
+  }
+
+  .container-fluid-2 {
+    margin-top: 45px;
+  }
+
+  .btn-outline {
+    width: 16%;
+  }
+}
+
+@media (max-width: 424px) and (min-width: 320px) {
+  .card-img-top {
+    margin-top: 0;
+    width: 80%;
+  }
+  .card-1 {
+    margin-top: 170px;
+  }
+  .about-me {
+    margin: 0;
+    font-size: 14px;
+  }
+  .box {
+    margin-top: -35px;
+  }
+  .portfolio,
+  .card-title,
+  .form-title,
+  .language,
+  .message,
+  .email {
+    font-size: 14px;
+  }
+
+  .form {
+    margin-top: 15px;
+    height: 370px;
+  }
+
+  #email, #message {
+    width: 100%;
+  }
+
+  #message {
+    height: 50%;
+  }
+
+  .form-title {
+    margin-top: -45px;
+    margin-bottom: -15px;
+  }
+
+  .submit-button {
+    margin-top: -45px;
+  }
+
+  .btn {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  body {
+    height: 280vh;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    height: 290vh;
+  }
+
+  .email {
+    width: 200px;
+  } 
+}
+
+@media screen and (max-width: 380px) {
+  .form-title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 300px) {
+  .card-img-top {
+    margin-top: 0;
+    width: 100%;
+  }
+  .card-1 {
+    margin-top: 170px;
+    width: 110%;
+  }
+  .about-me {
+    margin: 0;
+    font-size: 10px;
+  }
+  .box {
+    margin-top: -35px;
+  }
+  .portfolio,
+  .card-title,
+  .form-title,
+  .language,
+  .message,
+  .email {
+    font-size: 14px;
+  }
+
+  .form {
+    display: grid;
+    justify-items: center;
+  }
+
+  .form-title {
+    position: absolute;
+  }
+
+  #email, #message {
+    width: 200px;
+  }
+}
